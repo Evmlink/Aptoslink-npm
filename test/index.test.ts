@@ -31,7 +31,7 @@ test("matches website", () => {
  */
 test("balance check", () => {
   return AptosLink.fromLink('http://localhost:8080/MHhhODY5ODZhOWRmODAyYzc5NTAwMmI4Njg4YWM4ZmRlMGQzOTJlMWUyMzE0NjQ5MTIxMzRlNjFmYzYwNGM4YzJl/SGFwcHkgQmlydGhkYXkgIQ==/').then(async (aptoslink: AptosLink) => {
-    var bal =await AptosLink.balance(aptoslink,"testnet")
+    const bal =await AptosLink.balance(aptoslink,"testnet")
     console.log(bal[1].data.coin.value)
   });
 })
@@ -42,6 +42,6 @@ test("balance check", () => {
 test("transaction check", () => {
   return AptosLink.fromLink('http://localhost:8080/MHhhODY5ODZhOWRmODAyYzc5NTAwMmI4Njg4YWM4ZmRlMGQzOTJlMWUyMzE0NjQ5MTIxMzRlNjFmYzYwNGM4YzJl/SGFwcHkgQmlydGhkYXkgIQ==/').then(async (aptoslink: AptosLink) => {
     console.log(aptoslink.keypair.privateKey.toString())
-    await AptosLink.transfer(aptoslink,"testnet",100000,'0x5a6a33557e4ed68ad4f78dc71a2fdbc5e07b18530074c1b43078ebe45d305cfd')
+    // await AptosLink.transfer(aptoslink,"testnet",100000,'0x5a6a33557e4ed68ad4f78dc71a2fdbc5e07b18530074c1b43078ebe45d305cfd')
   });
 })

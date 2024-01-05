@@ -41,7 +41,7 @@ const decryptByDES = (ciphertext:any, key:any) => {
 }
 //Create a init link for a random address
 const aesCreate = async (msg:any,pwd:string) => {
-    let seed = (pwd=="")?ranStr(DEFAULT_PASSWORDLENGTH):pwd;
+    const seed = (pwd=="")?ranStr(DEFAULT_PASSWORDLENGTH):pwd;
     const ret =  aesEncrypt(
       msg,
       seed
