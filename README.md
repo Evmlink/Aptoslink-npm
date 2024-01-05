@@ -1,4 +1,4 @@
-# AptLink Npm
+# AptosLink Npm
 
 This repo is to build a browser base light wallet in Aptos .
 
@@ -14,7 +14,7 @@ Which allows users to send out `Cash gift` easily by web link .
 
 # Basic Installation instructions
 ```bash
-npm install @AptLink/api
+npm install @AptosLink/api
 ```
 Import Instructions
 ```js
