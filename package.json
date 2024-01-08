@@ -11,7 +11,7 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint"
   },
-  "author": "evmlink",
+  "author": "crypto-macondo",
   "license": "LicenseRef-LICENSE",
   "dependencies": {
     "@aptos-labs/ts-sdk": "^1.3.0",
@@ -44,7 +44,8 @@
     "aptos",
     "evmlink",
     "wallet",
-    "airdrop"
+    "airdrop",
+    "aptoslink"
   ],
   "homepage": "https://github.com/Evmlink/Aptoslink-npm"
 }
